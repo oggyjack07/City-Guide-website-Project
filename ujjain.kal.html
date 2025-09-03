@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kal Bhairav Mandir Ujjain - City Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f9ff;
+    }
+
+    .navbar {
+      background-color: #1c2833;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .photo-row img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-row img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .description {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 30px;
+      font-size: 20px;
+      color: #333;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .description h2 {
+      color: #1c2833;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    .map-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .map-link a {
+      background-color: #2980b9;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .map-link a:hover {
+      background-color: #1c5d88;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #1c2833;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .photo-row img {
+        height: 300px;
+      }
+
+      .description {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+
+      .description h2 {
+        font-size: 30px;
+      }
+
+      .navbar {
+  background-color: #1c2833;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.search-box {
+  position: relative;
+  margin: 0 auto;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.search-box input {
+  padding: 8px 14px;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  padding-right: 34px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+  color: #555;
+}
+
+.search-results {
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.search-results div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.search-results div:hover {
+  background-color: #f0f0f0;
+}
+
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <div class="navbar">
+  <h1 style="margin: 0;">Incredible India</h1>
+
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="ujjain.html">Back</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+
+  <!-- Photo Row -->
+  <div class="photo-container">
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="https://temple.yatradham.org/public/Product/temple/temple_d44uKkiR_202408141257490.jpg" alt="Kal Bhairav Mandir" />
+      </div>
+      <div class="photo-item">
+        <img src="https://www.prabhatkhabar.com/wp-content/uploads/2024/07/kaal-bhairav-Temple.jpeg" alt="Kal Bhairav Ujjain" />
+      </div>
+      <div class="photo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Kal_Bhairav_temple_Ujjain.jpg" alt="Liquor Offering" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <h2>Kal Bhairav Mandir, Ujjain</h2>
+    <p>
+      Kal Bhairav Mandir Ujjain ka ek ati-rahasyamayi aur prachin mandir hai jo Bhairav Baba ko samarpit hai. Yahaan ki sabse vishesh baat hai ki bhakton dwara Bhairav Baba ko sharab chadhayi jaati hai — aur mandir mein hi Baba ise grahan bhi karte hain. Yeh mandir tantrik kriyaon aur aghori sadhnaon ke liye bhi jana jata hai. Shiv ke roop Kal Bhairav ko yeh sthaan samarpit hai aur yahaan aakar bhakt apni manokaamnaon ki poorti ke liye prarthana karte hain.
+    </p>
+  </div>
+
+  <!-- Suggested Video -->
+  <div class="description">
+    <h2>Suggested Video</h2>
+    <p>Kal Bhairav Mandir mein sharab chadhane ka drishya dekhein:</p>
+  </div>
+
+  <!-- YouTube Video Embed -->
+  <div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/FLkAwdNl-vo?si=Ngu_bGdumznYlCMm" 
+      title="Kal Bhairav Temple Ujjain Liquor Offering" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="max-width: 1100px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+    </iframe>
+  </div>
+
+  <!-- Google Map Link -->
+  <div class="map-link">
+    <a href="https://maps.app.goo.gl/xtNHbXwkKHA9HQN16" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Ujjain City Guide (Travel Guide). All rights reserved.
+  </footer>
+
+</body>
+</html>

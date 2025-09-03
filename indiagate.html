@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>India Gate - Delhi City Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fd;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .photo-row img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-row img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .description {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 30px;
+      font-size: 20px;
+      color: #333;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .description h2 {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    .map-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .map-link a {
+      background-color: #2980b9;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .map-link a:hover {
+      background-color: #1a5e84;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .photo-row img {
+        height: 300px;
+      }
+      
+      .description {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+      
+      .description h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Delhi City Guide</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="delhi.html">Back</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Photo Row -->
+  <div class="photo-container">
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="https://t3.ftcdn.net/jpg/04/01/43/06/360_F_401430617_QU5FmwCbN3oiysrAnVN2yXreAkbPOESe.jpg" alt="India Gate 1" />
+      </div>
+      <div class="photo-item">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/india-gate-delhi-1-attr-hero?qlt=82&ts=1727351922349" alt="India Gate 2" />
+      </div>
+      <div class="photo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/India_Gate_on_the_evening_of_77th_Independence_day.jpg" alt="India Gate 3" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <h2>India Gate - A Tribute to the Nation’s Heroes</h2>
+    <p>
+      India Gate, located in the heart of New Delhi, is a war memorial dedicated to the 84,000 Indian soldiers who died during World War I and the Third Anglo-Afghan War. Designed by Sir Edwin Lutyens and inaugurated in 1931, the 42-meter-high arch stands as a symbol of national pride and valor. Constructed in sandstone, India Gate also houses the Amar Jawan Jyoti, the eternal flame honoring unknown soldiers, added after the 1971 Indo-Pak war. Surrounded by lush green lawns, it is a popular spot for evening strolls, patriotic celebrations, and cultural events. At night, the structure is beautifully lit, making it a breathtaking sight and one of Delhi's most visited monuments.
+    </p>
+  </div>
+
+     <!-- Suggested Video -->
+<div class="description">
+  <h2>Suggested Video</h2>
+  <p>Watch this amazing video to explore the beauty of India Gate , Delhi</p>
+</div>
+
+  <!-- YouTube Video Embed -->
+<div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+  <iframe width="100%" height="450" src="https://www.youtube.com/embed/MTJZ-h5Inq0?si=HlcmxIwOU_Pmuxc7" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="max-width: 1100px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+  </iframe>
+</div>
+
+  <!-- Google Map Link -->
+  <div class="map-link">
+    <a href="https://maps.app.goo.gl/tu8dt4XnnuVJT9teA" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Delhi City Guide (Travel Guide). All rights reserved.
+  </footer>
+
+</body>
+</html>

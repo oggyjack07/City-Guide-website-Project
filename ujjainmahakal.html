@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahakal Mandir Ujjain - City Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f9ff;
+    }
+
+    .navbar {
+      background-color: #1c2833;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .photo-row img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-row img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .description {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 30px;
+      font-size: 20px;
+      color: #333;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .description h2 {
+      color: #1c2833;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    .map-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .map-link a {
+      background-color: #6c3483;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .map-link a:hover {
+      background-color: #512e5f;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #1c2833;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .photo-row img {
+        height: 300px;
+      }
+
+      .description {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+
+      .description h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Ujjain City Guide</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="ujjain.html">Back</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Photo Row -->
+  <div class="photo-container">
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67615687d0c25-ujjain-mahkal-temple-174626458-16x9.jpeg?size=948:533" alt="Mahakaleshwar Temple" />
+      </div>
+      <div class="photo-item">
+        <img src="https://www.mptourism.com/web/image/catalog/Blog%20Image/Mahakal-ujjain1.jpg" alt="Mahakal Ling Darshan" />
+      </div>
+      <div class="photo-item">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/46/95/1d/shri-mahakaleshwar-temple.jpg?w=1200&h=1200&s=1" alt="Temple Premises" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <h2>Shri Mahakaleshwar Jyotirling, Ujjain</h2>
+    <p>
+      Shri Mahakaleshwar Mandir Ujjain ka ek pavitra aur prachin mandir hai, jo 12 Jyotirlingon me se ek hai. Yah mandir Shiv Bhakton ke liye ek ati vishesh sthal hai jahan har din hazaron bhakt darshan ke liye aate hain. Mahakal ki Bhasma Aarti subah-subah hone wali ek vishesh aarti hai, jise dekhna ek adhyatmik anubhav hota hai. Mandir ki bhavyata, shanti aur bhakti se bhara hua vatavaran man aur atma dono ko shuddh kar deta hai.
+    </p>
+  </div>
+
+  <!-- Suggested Video -->
+  <div class="description">
+    <h2>Suggested Video</h2>
+    <p>Mahakal Mandir ke darshan aur maha aarti ka anubhav iss video ke madhyam se prapt karein:</p>
+  </div>
+
+  <!-- YouTube Video Embed -->
+  <div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/swsXQ-jSP6w?si=0-v8P8wQ2DMKmbN-" 
+      title="Mahakal Darshan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="max-width: 1100px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+    </iframe>
+  </div>
+
+  <!-- Google Map Link -->
+  <div class="map-link">
+    <a href="https://maps.app.goo.gl/oKfxe63Jj58qQa8G7" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Ujjain City Guide (Travel Guide). All rights reserved.
+  </footer>
+
+</body>
+</html>

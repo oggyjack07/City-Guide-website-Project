@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bhopal City Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .restaurant-section {
+      margin: 20px;
+      padding: 20px;
+    }
+    .restaurant-list {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .restaurant-card {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .restaurant-card p {
+      margin: 5px 0;
+    }
+    .restaurant-card strong {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    #services {
+      background-color: #f4f4f4;
+      padding: 40px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    #services h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #services li {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    #services li:before {
+      content: "✔️ ";
+      color: #00b894;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Travel Guide</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('new-image.jpg');">
+    <h1>Welcome to Bhopal Guide</h1>
+  </section>
+
+  <section class="city-section">
+    <h2>Famous Places in Bhopal</h2>
+    <div class="place-grid">
+      <div class="place-card">
+        <a href="bhopalbhojtal.html" target="_blank">
+          <img src="https://cdn.tripuntold.com/media/photos/location/2018/12/28/2eddf219-428b-4928-b222-7aaa745ed62f.jpg" alt="Bhojtal">
+        </a>
+        <p>Bhojtal (Upper Lake)</p>
+      </div>
+      <div class="place-card">
+        <a href="bhopalmasajid.html" target="_blank">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ab/92/65/on-this-occasion-of-bakridwe.jpg?w=900&h=500&s=1" alt="Taj-ul-Masajid">
+        </a>
+        <p>Taj-ul-Masajid</p>
+      </div>
+      <div class="place-card">
+        <a href="bhopalbavan.html" target="_blank">
+          <img src="https://www.trawell.in/admin/images/upload/1505391000Bharat_Bhavan.jpg" alt="Bharat Bhavan">
+        </a>
+        <p>Bharat Bhavan</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Suggested Video -->
+  <div class="suggestion-section">
+  <h2>Suggested Video</h2>
+  <p>Watch this amazing video to explore the beauty of Bhojtal (Upper Lake), Bhopal:</p>
+</div>
+
+<!-- YouTube Video Embed -->
+<div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+  <iframe width="100%" height="650" src="https://www.youtube.com/embed/n-DbqB4iNrU?si=o1_wncD-Wwa7caPx&amp;start=2" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="max-width: 1600px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+  </iframe>
+</div>
+
+ <!-- Google Map Link -->
+ <div class="map-link">
+  <a href="https://maps.app.goo.gl/o1HBTGkQvRs6dbRD8" target="_blank">
+    📍 Get Directions on Google Maps
+  </a>
+</div>
+
+  
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Popular Places with short descriptions.</li>
+      <li>Nearby restaurants and local food options.</li>
+      <li>Photos and basic city travel information.</li>
+      <li>Quick navigation between Restaurant.</li>
+    </ul>
+  </section>
+
+  <section class="restaurant-section">
+    <div class="restaurant-heading">
+      <h2>Popular Restaurants in Bhopal</h2>
+    </div>
+  
+    <div class="restaurant-container">
+      <!-- Restaurant 1 -->
+      <div class="restaurant-card">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMAs5vczxN0PAYAkqsUTtuEcgQSLo0tmz0ndlrw=w426-h240-k-no" alt="Manohar Dairy & Restaurant">
+        <p><strong>Manohar Dairy & Restaurant</strong></p>
+        <p>Cuisine: Indian, Fast Food, Sweets</p>
+        <p>Location: Hamidia Road</p>
+        <a href="https://maps.app.goo.gl/UMSh6RRZNfKMU7d4A" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+  
+      <!-- Restaurant 2 -->
+      <div class="restaurant-card">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipP0Nroa7q1olnAvTIH_LRbA6fjYz6y_8uD9VuCy=w408-h306-k-no" alt="Under the Mango Tree">
+        <p><strong>Under the Mango Tree</strong></p>
+        <p>Cuisine: Indian, Continental</p>
+        <p>Location: Jehan Numa Palace</p>
+        <a href="https://maps.app.goo.gl/hsrD4uMKxgRgd3M3A" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+  
+      <!-- Restaurant 3 -->
+      <div class="restaurant-card">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPKNEhK0jUEHUu9-cJXoMqZXjJAedil99G29Xoe=w408-h306-k-no" alt="Gazal Restaurant">
+        <p><strong>Gazal Restaurant</strong></p>
+        <p>Cuisine: North Indian, Chinese</p>
+        <p>Location: MP Nagar</p>
+        <a href="https://maps.app.goo.gl/sKt33gGouZ4akeRTA" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Travel Guide. All rights reserved.</p>
+  </footer>
+</body>
+</html>

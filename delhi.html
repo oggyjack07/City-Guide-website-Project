@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Delhi City Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .restaurant-section {
+      margin: 20px;
+      padding: 20px;
+    }
+    .restaurant-list {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .restaurant-card {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .restaurant-card p {
+      margin: 5px 0;
+    }
+    .restaurant-card strong {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* Styles for the services section */
+    #services {
+      background-color: #f4f4f4;
+      padding: 40px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    #services h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #services li {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    #services li:before {
+      content: "✔️ ";
+      color: #00b894;
+    }
+
+    .place-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .place-card {
+      width: calc(33.33% - 20px);
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .place-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .place-card:hover {
+      transform: scale(1.03);
+    }
+
+    .place-card p {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Incredible India</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('new-image.jpg');">
+    <h1>Welcome to Delhi Guide</h1>
+  </section>
+
+  <section class="city-section">
+    <h2>Famous Places in Delhi</h2>
+    <div class="place-grid">
+      <div class="place-card">
+        <a href="indiagate.html" target="_blank">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/42/73/a4/india-gate.jpg?w=900&h=500&s=1" alt="India Gate" />
+          <p>India Gate</p>
+        </a>
+      </div>
+      <div class="place-card">
+        <a href="redfort.html" target="_blank">
+          <img src="https://cdn.britannica.com/20/189820-050-D650A54D/Red-Fort-Old-Delhi-India.jpg" alt="Red Fort" />
+          <p>Red Fort</p>
+        </a>
+      </div>
+      <div class="place-card">
+        <a href="Humayun.html" target="_blank">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/humayuns-tomb-delhi-1-attr-hero?qlt=82&ts=1727352156717" alt="Humayun's Tomb" />
+          <p>Humayun's Tomb</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Suggested Video -->
+   <div class="suggestion-section">
+    <h2>Suggested Video</h2>
+    <p>Watch this amazing video to explore the beauty of Delhi:</p>
+  </div>
+  
+  <!-- YouTube Video Embed -->
+  <div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+    <iframe width="100%" height="650" src="https://www.youtube.com/embed/JW1jSINTzaw?si=skkX4zULKfjfwwT9&amp;start=01" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="max-width: 1600px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+    </iframe>
+  </div>
+  
+   <!-- Google Map Link -->
+   <div class="map-link">
+    <a href="https://maps.app.goo.gl/jrCfF4kZ2S6coW7T6" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+  
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Popular places with short descriptions.</li>
+      <li>Nearby restaurants and local food options.</li>
+      <li>Photos and basic city travel information.</li>
+      <li>Quick navigation between Restaurant.</li>
+    </ul>
+  </section>
+
+  <section class="restaurant-section">
+    <div class="restaurant-heading">
+      <h2>Popular Restaurants in Delhi</h2>
+    </div>
+
+    <div class="restaurant-container">
+      <div class="restaurant-card">
+        <img src="https://images.indianexpress.com/2019/07/families_in_food_759.jpg" alt="Kuremal Mohan Lal Kulfi Wale">
+        <p><strong>Kuremal Mohan Lal Kulfi Wale</strong></p>
+        <p>Cuisine: Indian Desserts</p>
+        <p>Location: Chandni Chowk</p>
+        <a href="https://maps.app.goo.gl/4pD6C1ghGasRm3aBA" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://images.jdmagicbox.com/comp/def_content_category/khan-chacha-restaurants-11966510-gpvweby2t9.jpg" alt="Khan Chacha">
+        <p><strong>Khan Chacha</strong></p>
+        <p>Cuisine: North Indian, Mughlai</p>
+        <p>Location: Khan Market</p>
+        <a href="https://maps.app.goo.gl/VB6CSB3cs8YQnXqN6" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://b.zmtcdn.com/data/pictures/4/2004/439ebc26002c104a2851476c9a04e501.jpg" alt="Indian Accent">
+        <p><strong>Indian Accent</strong></p>
+        <p>Cuisine: Modern Indian</p>
+        <p>Location: Lodhi Road</p>
+        <a href="https://maps.app.goo.gl/oofyxFEXExkt1NBV7" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Travel Guide. All rights reserved.</p>
+  </footer>
+</body>
+</html>

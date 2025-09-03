@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-bg"></div> <!-- blur -->
+  
+      <div class="navbar">
+        <div class="logo">Travel Guide</div>
+      
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search city..." autocomplete="off" />
+          <i class="fas fa-search search-icon"></i>
+          <div id="searchResults" class="search-results"></div>
+        </div>
+        
+      
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown-container">
+            <a href="#" onclick="toggleDropdown(event)">Places</a>
+            <ul class="dropdown-menu">
+              <li><a href="indore.html">Indore</a></li>
+              <li><a href="dewas.html">Dewas</a></li>
+              <li><a href="ujjain.html">Ujjain</a></li>
+              <li><a href="mumbai.html">Mumbai</a></li>
+              <li><a href="delhi.html">Delhi</a></li>
+              <li><a href="bhopal.html">Bhopal</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+      
+           
+  
+      <section class="hero">
+        <h1>Welcome to Travel Guide - Your City Guide</h1>
+      </section>
+    </div>
+  </header>
+  
+  
+  <section class="city-section">
+    <h2>Locations</h2>
+  </section>
+  
+   <!-- Place Cards in home page -->
+<div class="place-grid">
+  <div class="place-card">
+    <a href="indore.html"><img src="https://www.holidify.com/images/cmsuploads/compressed/3551_20190228103219.jpg" alt="Indore"></a>
+    <p>Indore</p>
+  </div>
+  <div class="place-card">
+    <a href="ujjain.html"><img src="https://static.toiimg.com/photo/94055833.cms" alt="Ujjain"></a>
+    <p>Ujjain</p>
+  </div>
+  <div class="place-card">
+    <a href="dewas.html"><img src="https://d34vm3j4h7f97z.cloudfront.net/optimized/4X/f/0/0/f0024da20a7fbff030b2ec166e82bf59517ba441_2_631x500.jpeg" alt="Dewas"></a>
+    <p>Dewas</p>
+  </div>
+</div>
+
+<section class="city-section">
+
+  <div class="place-grii">
+    <p><strong>Indore</strong></p>
+    <p>Cleanest city of India, famous for street food & night markets.<br>Rajwada Palace and Sarafa Bazaar are must-visit places.</p>
+    <p><strong>Ujjain</strong></p>
+    <p>Spiritual city on the banks of Shipra river.<br>Mahakaleshwar Jyotirlinga attracts lakhs of devotees.</p>
+    <p><strong>Dewas</strong></p>
+    <p>Known for Tekri Mata Mandir a-top a scenic hill.<br>A peaceful city with a mix of nature and devotion.</p>
+                
+  </div>
+</section>
+<div class="place-grid">
+<div class="place-card">
+  <a href="mumbai.html"><img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/c8/3a.jpg" alt="mumbai"></a>
+  <p>Mumbai</p>
+</div>
+<div class="place-card">
+  <a href="delhi.html"><img src="https://www.holidify.com/images/cmsuploads/compressed/5621259188_e74d63cb05_b_20180302140149.jpg" alt="delhi"></a>
+  <p>Delhi</p>
+</div>
+<div class="place-card">
+  <a href="bhopal.html"><img src="https://i.pinimg.com/736x/ca/60/ca/ca60ca89811df10f0c2f24261162cfee.jpg" alt="bhopal"></a>
+  <p>Bhopal</p>
+</div></div>
+
+
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Popular places with short descriptions.</li>
+    <li>Nearby restaurants Information.</li>
+    <li>Photos and basic city travel information.</li>
+    <li>Quick navigation between places.</li>
+  </ul>
+</section>
+
+  
+  
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2 class="contact-title">Contact Us</h2>
+    <p class="contact-info">Have questions or suggestions? Feel free to reach out to us!</p>
+  
+    <div class="contact-details">
+      <p><strong>Email:</strong> TravelGuide@gmail.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Location:</strong> Dewas, Madhya Pradesh, India</p>
+    </div>
+    
+    
+    <button class="custom-button">Contact Us</button>
+  
+  
+  </section>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">⬆ Top</button>  
+  
+
+  <footer>
+    <p>&copy; 2025 Travel Guide. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleDropdown(event) {
+      event.preventDefault();
+      const dropdown = event.target.closest('.dropdown-container');
+      dropdown.classList.toggle('active');
+  
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-container').forEach(el => {
+        if (el !== dropdown) el.classList.remove('active');
+      });
+    }
+  
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      const isDropdown = e.target.closest('.dropdown-container');
+      if (!isDropdown) {
+        document.querySelectorAll('.dropdown-container').forEach(el => {
+          el.classList.remove('active');
+        });
+      }
+    });
+  </script>
+  <script>
+    // Show the button when user scrolls down
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction() {
+      const topBtn = document.getElementById("topBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    }
+  
+    // Scroll to top when clicked
+    function topFunction() {
+      document.body.scrollTop = 0; // for Safari
+      document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE
+    }
+  </script>
+
+<script>
+const cities = [
+  { name: "Indore", url: "indore.html" },
+  { name: "Ujjain", url: "ujjain.html" },
+  { name: "Dewas", url: "dewas.html" },
+  { name: "Mumbai", url: "mumbai.html" },
+  { name: "Delhi", url: "delhi.html" },
+  { name: "Bhopal", url: "bhopal.html" }
+];
+
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+
+searchInput.addEventListener("input", () => {
+  const input = searchInput.value.toLowerCase();
+  searchResults.innerHTML = "";
+
+  const filtered = cities.filter(city =>
+    city.name.toLowerCase().includes(input)
+  );
+
+  if (input && filtered.length) {
+    searchResults.style.display = "block";
+    filtered.forEach(city => {
+      const div = document.createElement("div");
+      div.textContent = city.name;
+      div.addEventListener("click", () => {
+        window.location.href = city.url;
+      });
+      searchResults.appendChild(div);
+    });
+  } else {
+    searchResults.style.display = "none";
+  }
+});
+
+// ✅ Enter press se redirect
+searchInput.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    const input = searchInput.value.toLowerCase();
+    const match = cities.find(city =>
+      city.name.toLowerCase() === input
+    );
+    if (match) {
+      window.location.href = match.url;
+    }
+  }
+});
+
+</script>
+
+  
+</body>
+</html>

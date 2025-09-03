@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mumbai City Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .restaurant-section {
+      margin: 20px;
+      padding: 20px;
+    }
+    .restaurant-list {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .restaurant-card {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .restaurant-card p {
+      margin: 5px 0;
+    }
+    .restaurant-card strong {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* Styles for the services section */
+#services {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  #services h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #services ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #services li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  #services li:before {
+    content: "✔️ ";
+    color: #00b894;
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Travel Guide</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('new-image.jpg');">
+    <h1>Welcome to Mumbai Guide</h1>
+  </section>
+
+  <section class="city-section">
+    <h2>Famous Places in Mumbai</h2>
+    <div class="place-grid">
+      <div class="place-card">
+        <a href="tajhotel.html" target="_blank">
+          <img src="https://akm-img-a-in.tosshub.com/lingo/images/story/media_bank/202312/657bdd60d1fdd-taj-mumbai-150015589-16x9.png" alt="Taj Hotel"/>
+        </a>
+        <p>Taj Hotel</p>
+      </div>
+      <div class="place-card">
+        <a href="marinedrive.html" target="_blank">
+          <img src="https://images.wanderon.in/blogs/new/2024/04/marine-drive-2.jpg" alt="Marine Drive"/>
+        </a>
+        <p>Marine Drive</p>
+      </div>
+      <div class="place-card">
+        <a href="gatewaymumbai.html" target="_blank">
+          <img src="https://media2.thrillophilia.com/images/photos/000/040/923/original/1556284488_shutterstock_214982728.jpg?w=753&h=450&dpr=1.5" alt="Gateway of India"/>
+        </a>
+        <p>Gateway Of India Mumbai</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Suggested Video -->
+   <div class="suggestion-section">
+    <h2>Suggested Video</h2>
+    <p>Watch this amazing video to explore the beauty of Mumbai:</p>
+  </div>
+  
+  <!-- YouTube Video Embed -->
+  <div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+    <iframe width="100%" height="650" src="https://www.youtube.com/embed/0ckImiKkVLg?si=R0JdE8_Zt7pYhVjy&amp;start=12" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="max-width: 1600px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+    </iframe>
+  </div>
+  
+   <!-- Google Map Link -->
+   <div class="map-link">
+    <a href="https://maps.app.goo.gl/8UCAfj8VYx7rRZ977" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+  
+  
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Popular places with short descriptions.</li>
+      <li>Nearby restaurants and local food options.</li>
+      <li>Photos and basic city travel information.</li>
+      <li>Quick navigation between Restaurant.</li>
+    </ul>
+  </section>
+
+  <section class="restaurant-section">
+    <div class="restaurant-heading">
+      <h2>Popular Restaurants in Mumbai</h2>
+    </div>
+  
+    <div class="restaurant-container">
+      <!-- Restaurant 1 -->
+      <div class="restaurant-card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/fc/74/30/bade-miya.jpg?w=900&h=500&s=1" alt="Bademiya">
+        <p><strong>Bademiya</strong></p>
+        <p>Cuisine: Mughlai, North Indian</p>
+        <p>Location: Colaba</p>
+        <a href="https://maps.app.goo.gl/VBF2djyy2Lfka4Ye9" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+  
+      <!-- Restaurant 2 -->
+      <div class="restaurant-card">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPtko1oJya_Dt2gq8x3yJ5ncfctH5mAg7tHlypi=w125-h125-n-k-no" alt="The Table">
+        <p><strong>The Bombay Canteen</strong></p>
+        <p>Indian restaurant</p>
+        <p>Location: Colaba</p>
+        <a href="https://maps.app.goo.gl/FDUcrsZMk82BKKzaA" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+  
+      <!-- Restaurant 3 -->
+      <div class="restaurant-card">
+        <img src="https://content.jdmagicbox.com/v2/comp/mumbai/l6/022pxx22.xx22.221018101631.f2l6/catalogue/trishna-fort-mumbai-restaurants-rkenxgh4e7.jpg" alt="Trishna">
+        <p><strong>Trishna</strong></p>
+        <p>Cuisine: Seafood, South Indian</p>
+        <p>Location: Fort</p>
+        <a href="https://maps.app.goo.gl/beeyZDkURBafQf8y6" target="_blank">
+          <button class="location-button">Live Location</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Travel Guide. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taj Mahal Palace - Mumbai City Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fd;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .photo-row img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-row img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .description {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 30px;
+      font-size: 20px;
+      color: #333;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .description h2 {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    .map-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .map-link a {
+      background-color: #2980b9;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .map-link a:hover {
+      background-color: #1a5e84;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .photo-row img {
+        height: 300px;
+      }
+      
+      .description {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+      
+      .description h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Mumbai City Guide</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="mumbai.html">Back</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Photo Row -->
+  <div class="photo-container">
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/103703163.jpg?k=760f615013b8331e247fcd22e5a6c98be3a2dc24f664c74021c28dc820acbaaf&o=&hp=1" alt="Taj Mahal Palace exterior" />
+      </div>
+      <div class="photo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Taj_Mahal_Palace_Hotel.jpg/1280px-Taj_Mahal_Palace_Hotel.jpg" />
+      </div>
+      <div class="photo-item">
+        <img src="https://live.staticflickr.com/3755/9199139969_a1c200d718_c.jpg" alt="Taj Mahal Palace luxurious lobby" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <h2>Taj Mahal Palace - Mumbai's Iconic Luxury Hotel</h2>
+    <p>
+      The Taj Mahal Palace is Mumbai's most iconic luxury hotel, standing majestically opposite the Gateway of India since 1903. Built by industrialist Jamsetji Tata, this architectural marvel blends Indo-Saracenic, Oriental, and Florentine styles. The hotel features 285 rooms including 46 suites, world-class restaurants like Wasabi by Morimoto and Masala Kraft, and the renowned Jiva Spa. The Taj has hosted royalty, presidents, and celebrities for over a century. Its grand central dome, cantilever staircase, and art collection featuring over 5,000 pieces make it a cultural landmark. The hotel gained global attention during the 2008 Mumbai attacks when it became a site of terrorist siege, demonstrating remarkable resilience in its subsequent restoration.
+    </p>
+  </div>
+
+     <!-- Suggested Video -->
+<div class="description">
+  <h2>Suggested Video</h2>
+  <p>Watch this amazing video to explore the beauty of Taj Hotel , Mumbai</p>
+</div>
+
+  <!-- YouTube Video Embed -->
+<div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+  <iframe width="100%" height="450" src="https://www.youtube.com/embed/f0skukjDalg?si=7Ihvdg8zi8zfDcnX&amp;start=19" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="max-width: 1100px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+  </iframe>
+</div>
+
+  <!-- Google Map Link -->
+  <div class="map-link">
+    <a href="https://maps.app.goo.gl/EVgMsT8XuJz6ZWus9" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Mumbai City Guide (Travel Guide). All rights reserved.
+  </footer>
+
+</body>
+</html>

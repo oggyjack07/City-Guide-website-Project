@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tekri Dewas - City Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fd;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .photo-row img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-row img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .description {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 30px;
+      font-size: 20px;
+      color: #333;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .description h2 {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    .map-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .map-link a {
+      background-color: #2980b9;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .map-link a:hover {
+      background-color: #1a5e84;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .photo-row img {
+        height: 300px;
+      }
+      
+      .description {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+      
+      .description h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Dewas City Guide</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="dewas.html">Back</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Photo Row -->
+  <div class="photo-container">
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Dewas_City_View_From_Tekri_Hilltop.jpg" alt="Tekri Dewas View" />
+      </div>
+      <div class="photo-item">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/0b/88/16/maa-chamunda-mandir.jpg?w=700&h=400&s=1" alt="Maa Chamunda Mandir" />
+      </div>
+      <div class="photo-item">
+        <img src="https://tfipost.com/wp-content/uploads/2023/02/Dewas-Mata-Mandir-Entrance.jpg" alt="Tekri Mandir" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <h2>Tekri Dewas - Maa Chamunda Mandir</h2>
+    <p>
+      Dewas ki Tekri, Madhya Pradesh ke Dewas sheher mein sthit ek pavitra sthal hai jo Maa Chamunda aur Tulja Bhawani ko samarpit hai. Yah mandir pahadi par bana hai, jahan tak pahuchne ke liye log paidal chadhai karte hain ya ropeway ka use karte hain. Mandir se sheher ka sundar drishya dikhai deta hai. Navratri ke samay yah sthal bhakton se bhar jaata hai aur ek shaktishaali dharmik aur adhyatmik anubhav prastut karta hai.
+    </p>
+  </div>
+
+    <!-- Suggested Video -->
+<div class="description">
+  <h2>Suggested Video</h2>
+  <p>Watch this amazing video to explore the beauty of Tekri , Dewas</p>
+</div>
+
+  <!-- YouTube Video Embed -->
+<div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+  <iframe width="100%" height="450" src="https://www.youtube.com/embed/h3H3xCXpZ_w?si=9W3DpzPpTzMlSPmB&amp;start=12" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="max-width: 1100px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+  </iframe>
+</div>
+
+  <!-- Google Map Link -->
+  <div class="map-link">
+    <a href="https://maps.app.goo.gl/qxysDt4FkhnXCHit5" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Dewas City Guide (Travel Guide). All rights reserved.
+  </footer>
+
+</body>
+</html>

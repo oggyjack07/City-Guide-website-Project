@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bharat Bhavan Bhopal - City Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fd;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .photo-row img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-row img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-item {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .description {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 30px;
+      font-size: 20px;
+      color: #333;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .description h2 {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    .map-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .map-link a {
+      background-color: #2980b9;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .map-link a:hover {
+      background-color: #1a5e84;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .photo-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .photo-row img {
+        height: 300px;
+      }
+
+      .description {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+
+      .description h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Bhopal City Guide</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="bhopal.html">Back</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Photo Row -->
+  <div class="photo-container">
+    <div class="photo-row">
+      <div class="photo-item">
+        <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/29/8990c8fff616f35e79a73c19ec6a9b6e_1000x1000.jpg" alt="Bharat Bhavan Main Building" />
+      </div>
+      <div class="photo-item">
+        <img src="https://mediaim.expedia.com/destination/2/31f29a3996ea39f04187a9bc38f261f8.jpg" alt="Bharat Bhavan Auditorium" />
+      </div>
+      <div class="photo-item">
+        <img src="https://akm-img-a-in.tosshub.com/sites/indiacontent/0/images/product/public/27112019/00/01/57/48/52/77/26/32/1574852772632/659-aerial-view-of-bharat-bhawan-in-bhopal-madhya-pradesh--india---it-image-Bharat_Bhawan_021105_PT.jpg" alt="Cultural Performance" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <h2>Bharat Bhavan - Bhopal Ka Sanskritik Kendra</h2>
+    <p>
+      Bharat Bhavan Bhopal ka ek lokpriya kala, sahitya aur sangeet ka kendr hai. Isay 1982 mein sthapit kiya gaya tha aur yah Bharat ke sabse bade cultural complexes mein se ek hai. Yahaan painting gallery, auditorium, library, open-air amphitheatre aur workshop spaces uplabdh hain. Kala premi log yahaan desh aur videsh ke kalakaron ki kala dekhne aate hain.
+    </p>
+  </div>
+
+  <!-- Suggested Video -->
+  <div class="description">
+    <h2>Suggested Video</h2>
+    <p>Watch this informative video to know more about Bharat Bhavan and its cultural importance:</p>
+  </div>
+
+  <!-- YouTube Video Embed -->
+  <div style="display: flex; justify-content: center; padding: 0 20px 40px 20px;">
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/_Rj7v1xrH48?si=x4Lksjjq1ZrLO_3i" 
+      title="Bharat Bhavan Documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="max-width: 1100px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+    </iframe>
+  </div>
+
+  <!-- Google Map Link -->
+  <div class="map-link">
+    <a href="https://maps.app.goo.gl/NQ2sQWhtmFcb9Qqs5" target="_blank">
+      📍 Get Directions on Google Maps
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Bhopal City Guide (Travel Guide). All rights reserved.
+  </footer>
+
+</body>
+</html>
