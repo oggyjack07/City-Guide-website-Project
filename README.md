@@ -2,7 +2,7 @@
 
 📌 Project Name: Travel Guide – City Guide Website
   🖥️ Main Page: index.html
-  👨‍💻 Developed By: ayush_less
+  👨‍💻 Developed By: @ayuushss
   
   LIVE DEMO - https://oggyjack07.github.io/Travel-Guide-Website-Project/
 
@@ -40,4 +40,5 @@
 
   📬 Contact Us
 
-  📧 Email: oggyjack0789@gmail.com
+  Email: oggyjack0789@gmail.com
+  LinkedIN : www.linkedin.com/in/ayuushss
