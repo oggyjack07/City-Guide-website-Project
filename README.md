@@ -6,7 +6,6 @@
   
   LIVE DEMO - https://oggyjack07.github.io/Travel-Guide-Website-Project/
 
-
   🔍 Objective
   This website is made to show the famous places of Indore, Ujjain, and Bhopal — like Rajwada, Mahakal, Bhojtal, Bharat Bhavan, Chappan Dukan, Kal Bhairav, etc.
 
@@ -42,4 +41,3 @@
   📬 Contact Us
 
   📧 Email: oggyjack0789@gmail.com
-  📱 Mobile Number: XXXXXX6225
